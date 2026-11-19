@@ -12,7 +12,7 @@ pub struct EndpointUdp {
 
 impl EndpointUdp {
     pub fn new(sock: UdpSocket, bufsize: usize) -> Self {
-        let buff = Vec::with_capacity(bufsize);
+        let buff = vec![0; bufsize];
         let peer = None;
         let pending_frame = None;
 
