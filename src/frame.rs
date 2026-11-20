@@ -5,7 +5,7 @@ pub struct FrameMeta {
     pub timestamp: std::time::Instant,
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Frame {
     pub data: bytes::Bytes,
 }
